@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Armin Midzan")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ArminMidzan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("© 2024 Armin Midzan")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("NotePad clone")]

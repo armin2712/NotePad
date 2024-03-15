@@ -183,7 +183,8 @@ namespace NotePadApp.Views
             {
                 // Restore the window to normal state
                 WindowState = WindowState.Normal;
-                RestoreBtn.Content = "\u2b1c";
+                this.RestoreBtn.Content = "\u2b1c";
+
 
                 //BorderThickness = new Thickness(WindowState == WindowState.Maximized ? 8 : 0);
             }
@@ -194,8 +195,7 @@ namespace NotePadApp.Views
                 this.WindowStyle = WindowStyle.None;
 
                 WindowState = WindowState.Maximized;
-
-                RestoreBtn.Content = "\u2750";
+                this.RestoreBtn.Content ="\u2750";
 
 
                 // WindowStyle = WindowStyle.None;

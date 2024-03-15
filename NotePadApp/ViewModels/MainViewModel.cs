@@ -19,6 +19,19 @@ namespace NotePadApp.ViewModels
         #region MainView
 
         /// <summary>
+        /// Gets or sets the restore button symbol
+        /// </summary>
+        public string RestoreButton
+        {
+            get => Properties.Settings.Default.RestorePath;
+            set
+            {
+                Properties.Settings.Default.RestorePath=value;
+                this.OnPropertyChanged();
+            }
+        }
+
+        /// <summary>
         /// Restores the Restore symbol of the MainWindow
         /// </summary>
         protected void GetRestoreSymbol(
@@ -32,14 +45,14 @@ namespace NotePadApp.ViewModels
                     == (int)System.Windows.WindowState.Maximized)
                 {
                     //Set the Restore Button path to max
-                    NotePadApp.Properties.Settings.Default.RestorePath = "\u2750";
+                    this.RestoreButton = "\u2750";
 
                 }
                 else
                 {
 
                     //Set the Restore Button path to normal
-                    NotePadApp.Properties.Settings.Default.RestorePath = "\u2b1c";
+                    this.RestoreButton = "\u2b1c";
                 }
 
             }
