@@ -17,3 +17,23 @@ C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\refint\Applicat
 C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.xml
 C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\Application.dll.config
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\Application.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\Application.xml
+C:\Users\midza\Documents\GitHub\NotePad\Application\bin\Debug\net8.0\de\Application.resources.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.Properties.Resources.resources
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.Properties.Resources .de.resources
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.csproj.GenerateResource.cache
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\de\Application.resources.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.xml
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\midza\Documents\GitHub\NotePad\Application\obj\Debug\net8.0\ref\Application.dll
