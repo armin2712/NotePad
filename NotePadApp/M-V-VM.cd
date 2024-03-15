@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Models">
+    <Position X="0.51" Y="0.5" Height="0.291" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Behaviors">
+    <Position X="0.5" Y="3.24" Height="0.291" Width="1.7" />
+  </Comment>
+  <Comment CommentText="ViewModels">
+    <Position X="3.885" Y="0.5" Height="0.291" Width="13.331" />
+  </Comment>
+  <Comment CommentText="ViewModels-Support">
+    <Position X="0.5" Y="6.416" Height="0.528" Width="14.341" />
+  </Comment>
+  <Comment CommentText="ViewModels-Find Section">
+    <Position X="0.5" Y="12.616" Height="0.528" Width="14.341" />
+  </Comment>
+  <Comment CommentText="Views">
+    <Position X="20.06" Y="0.5" Height="0.291" Width="13.331" />
+  </Comment>
+  <Comment CommentText="Views-Support">
+    <Position X="23.987" Y="2.573" Height="0.291" Width="9.664" />
+  </Comment>
+  <Class Name="NotePadApp.Models.ThemeManager">
+    <Position X="0.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAABAAAAAAAAAACAgAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Models\ThemeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.Models.Behaviors.TextBoxHelper">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Behaviors\TextBoxHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.Models.Behaviors.ScrollViewerScrollBehavior">
+    <Position X="0.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Behaviors\ScrollViewerScrollBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.MainViewModel">
+    <Position X="4" Y="1" Width="3.25" />
+    <Members>
+      <Field Name="_CloseAll" Hidden="true" />
+      <Field Name="_DarkTheme" Hidden="true" />
+      <Field Name="_FindNext" Hidden="true" />
+      <Field Name="_FindPrevious" Hidden="true" />
+      <Field Name="_Font" Hidden="true" />
+      <Field Name="_GoTo" Hidden="true" />
+      <Field Name="_GoToLine" Hidden="true" />
+      <Field Name="_LightTheme" Hidden="true" />
+      <Field Name="_Navigation" Hidden="true" />
+      <Field Name="_NewWindow" Hidden="true" />
+      <Field Name="_Tabs" Hidden="true" />
+      <Field Name="_Theme" Hidden="true" />
+      <Field Name="_View" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAABAAEACgAAEQEQAKBAAAgIFEABAGAEgVAAAAgCQII=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Tabs" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Tab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Tab">
+    <Position X="13.75" Y="1" Width="3.25" />
+    <Members>
+      <Field Name="_Caret" Hidden="true" />
+      <Field Name="_CharCount" Hidden="true" />
+      <Field Name="_Close" Hidden="true" />
+      <Field Name="_Content" Hidden="true" />
+      <Field Name="_Delete" Hidden="true" />
+      <Field Name="_IsSaved" Hidden="true" />
+      <Field Name="_Name" Hidden="true" />
+      <Field Name="_Path" Hidden="true" />
+      <Field Name="_SelectedText" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAEAACAAAgAAQALAAAAAIAQAAAEEAAgAgAKAgIKAAAA=</HashCode>
+      <FileName>ViewModels\Tab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.TabController">
+    <Position X="16.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAABAAAAAAAAEAABAAAAAAAAAQ=</HashCode>
+      <FileName>ViewModels\TabController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.TabsManager">
+    <Position X="10.75" Y="1.25" Width="2.75" />
+    <Members>
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Date" Hidden="true" />
+      <Field Name="_Find" Hidden="true" />
+      <Field Name="_FindNext" Hidden="true" />
+      <Field Name="_FindPrevious" Hidden="true" />
+      <Field Name="_List" Hidden="true" />
+      <Field Name="_NewTab" Hidden="true" />
+      <Field Name="_OpenTab" Hidden="true" />
+      <Field Name="_PageSetup" Hidden="true" />
+      <Field Name="_Replace" Hidden="true" />
+      <Field Name="_ReplaceAll" Hidden="true" />
+      <Field Name="_Save" Hidden="true" />
+      <Field Name="_SaveAll" Hidden="true" />
+      <Field Name="_SaveAs" Hidden="true" />
+      <Field Name="_SelectedTabItem" Hidden="true" />
+      <Field Name="_ShowFindDialog" Hidden="true" />
+      <Field Name="_ShowReplaceDialog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAACIAATQACAQARQgAgEEoAACAICIAhBBAEUAIAADI=</HashCode>
+      <FileName>ViewModels\TabsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.ViewManager">
+    <Position X="7.75" Y="1.25" Width="2.25" />
+    <Members>
+      <Field Name="_IsFooterVisible" Hidden="true" />
+      <Field Name="_IsWrapping" Hidden="true" />
+      <Field Name="_Multiplicator" Hidden="true" />
+      <Field Name="_RestoreView" Hidden="true" />
+      <Field Name="_ZoomIn" Hidden="true" />
+      <Field Name="_ZoomOut" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gQAAAAIICAAAAgBAEIAAAAIAgAAAAACAAAAAAAAAAIA=</HashCode>
+      <FileName>ViewModels\ViewManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.CaretManager">
+    <Position X="10.25" Y="7.25" Width="2.5" />
+    <Members>
+      <Field Name="_Column" Hidden="true" />
+      <Field Name="_Index" Hidden="true" />
+      <Field Name="_Line" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAAAgAAAABAAAAAAAAAAAAAAAEACAABAAA=</HashCode>
+      <FileName>ViewModels\Support\CaretManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.CustomMessageBox">
+    <Position X="13.25" Y="7.25" Width="2.75" />
+    <Members>
+      <Field Name="_Cancel" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Message" Hidden="true" />
+      <Field Name="_No" Hidden="true" />
+      <Field Name="_Ok" Hidden="true" />
+      <Field Name="_Yes" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAASQAUGAAAAAAAAESAADAEAAIAAAABIQAAAAA=</HashCode>
+      <FileName>ViewModels\Support\CustomMessageBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.FontManager">
+    <Position X="3.5" Y="7.25" Width="2.75" />
+    <Members>
+      <Field Name="_Close" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Family" Hidden="true" />
+      <Field Name="_ShowFontWindow" Hidden="true" />
+      <Field Name="_Size" Hidden="true" />
+      <Field Name="_Style" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IEAAAIAAAQAggAAAgAAAAkIgAABEAAgABAAAAAGARAA=</HashCode>
+      <FileName>ViewModels\Support\FontManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.LineNavigation">
+    <Position X="0.5" Y="7.25" Width="2.5" />
+    <Members>
+      <Field Name="_ClearInput" Hidden="true" />
+      <Field Name="_Line" Hidden="true" />
+      <Field Name="_Window" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAEAAAAAAAAIAAAAAQAAAAAAAAAAAACAABEBA=</HashCode>
+      <FileName>ViewModels\Support\LineNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.LineNavigationWindowManager">
+    <Position X="0.5" Y="9.75" Width="2.5" />
+    <Members>
+      <Field Name="_Close" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAEAAAAAEAAIAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\Support\LineNavigationWindowManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.Support.WindowController">
+    <Position X="7" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAgBAAAYACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\Support\WindowController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.FindAndReplaceService.FindManager">
+    <Position X="0.75" Y="13.5" Width="3.5" />
+    <Members>
+      <Field Name="_ClearSearchQuery" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Data" Hidden="true" />
+      <Field Name="_Window" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACQAAAQAAAIAAAEAAAAABABBAAAAECAAAACA=</HashCode>
+      <FileName>ViewModels\FindAndReplaceService\FindManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.FindAndReplaceService.FindController">
+    <Position X="5" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CACAAQAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAACA=</HashCode>
+      <FileName>ViewModels\FindAndReplaceService\FindController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.FindAndReplaceService.SearchData">
+    <Position X="12" Y="13.5" Width="2.25" />
+    <Members>
+      <Field Name="_Comparison" Hidden="true" />
+      <Field Name="_HasTextToSearch" Hidden="true" />
+      <Field Name="_IsMatchCase" Hidden="true" />
+      <Field Name="_IsWrapAround" Hidden="true" />
+      <Field Name="_ReplaceText" Hidden="true" />
+      <Field Name="_SearchQuery" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEQCAAAAAAAAAgAAAAAAIAAAAAACAAAAACEAAgAIQoA=</HashCode>
+      <FileName>ViewModels\FindAndReplaceService\SearchData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.ViewModels.FindAndReplaceService.FindWindowManager">
+    <Position X="8.5" Y="13.5" Width="2.75" />
+    <Members>
+      <Field Name="_Close" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_ReplaceVisibility" Hidden="true" />
+      <Field Name="_ToggleReplace" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABQIAAAAIAAAAAEACAAAEAAACAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\FindAndReplaceService\FindWindowManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotePadApp.Views.FooterView" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FooterView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotePadApp.Views.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="1" Width="3.25" />
+    <Members>
+      <Field Name="mRestoreIfMove" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="NotePadApp.Views.MainWindow.MonitorOptions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NotePadApp.Views.MainWindow.POINT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NotePadApp.Views.MainWindow.MINMAXINFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="NotePadApp.Views.MainWindow.MONITORINFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Struct Name="NotePadApp.Views.MainWindow.RECT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQQAAAQAAAEACCAoAAIEAEAAAAiAAAACAIAEACAQA=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotePadApp.Views.MenuView" BaseTypeListCollapsed="true">
+    <Position X="26" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MenuView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotePadApp.Views.TabContentView" BaseTypeListCollapsed="true">
+    <Position X="24.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TabContentView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotePadApp.Views.ThemeView" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ThemeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotePadApp.Views.Support.FindAndReplaceView">
+    <Position X="24.25" Y="3.25" Width="2.25" />
+    <Members>
+      <Field Name="lastFocusedElement" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAkA=</HashCode>
+      <FileName>Views\Support\FindAndReplaceView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NotePadApp.Views.Support.FontView">
+    <Position X="26.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Support\FontView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NotePadApp.Views.Support.GoToView">
+    <Position X="28.75" Y="3.25" Width="2" />
+    <Members>
+      <Field Name="_regex" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAgAAAAgEAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Views\Support\GoToView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NotePadApp.Views.Support.MessageOk">
+    <Position X="31" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Support\MessageOk.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NotePadApp.Views.Support.MessageYesNo">
+    <Position X="31" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Support\MessageYesNo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="NotePadApp.ViewModels.Support.MessageType">
+    <Position X="13.5" Y="11" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAA=</HashCode>
+      <FileName>ViewModels\Support\CustomMessageBox.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NotePadApp.ViewModels.Support.WindowType">
+    <Position X="7.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\Support\WindowController.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

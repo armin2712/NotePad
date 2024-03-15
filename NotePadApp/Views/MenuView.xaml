@@ -1,0 +1,167 @@
+﻿<UserControl
+    x:Class="NotePadApp.Views.MenuView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:NotePadApp.Views"
+    xmlns:m="clr-namespace:NotePadApp.Models"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:t1="clr-namespace:NotePadApp.Assets"
+    xmlns:vm="clr-namespace:NotePadApp.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Menu
+        Grid.Row="1"
+        Margin="2,0,2,0"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Center"
+        HorizontalContentAlignment="Left"
+        VerticalContentAlignment="Center"
+        Background="Transparent"
+        BorderThickness="0"
+        FontFamily="Consolas"
+        FontSize="11pt"
+        Foreground="{DynamicResource BodyText}">
+        <!--  File Header Commands  -->
+        <!--  Setting up the DataContext for The File Commands  -->
+        <MenuItem VerticalAlignment="Center" Header="{x:Static t1:Labels.FileHeader}">
+            <MenuItem
+                Command="{Binding Tabs.NewTab}"
+                Header="{x:Static t1:Labels.NewTab}"
+                InputGestureText="{x:Static t1:Shortcuts.New}" />
+            <MenuItem
+                Command="{Binding NewWindow}"
+                Header="{x:Static t1:Labels.NewWindow}"
+                InputGestureText="{x:Static t1:Shortcuts.NewWindow}" />
+            <MenuItem
+                Command="{Binding Tabs.OpenTab}"
+                Header="{x:Static t1:Labels.Open}"
+                InputGestureText="{x:Static t1:Shortcuts.Open}" />
+            <MenuItem
+                Command="{Binding Tabs.Save}"
+                Header="{x:Static t1:Labels.Save}"
+                InputGestureText="{x:Static t1:Shortcuts.Save}" />
+            <MenuItem
+                Command="{Binding Tabs.Save}"
+                Header="{x:Static t1:Labels.SaveAs}"
+                InputGestureText="{x:Static t1:Shortcuts.SaveAs}" />
+            <MenuItem
+                Command="{Binding Tabs.SaveAll}"
+                Header="{x:Static t1:Labels.SaveAll}"
+                InputGestureText="{x:Static t1:Shortcuts.SaveAll}" />
+            <Separator Margin="-30,0,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem Command="{Binding Tabs.PageSetup}" Header="{x:Static t1:Labels.PageSetup}" />
+            <MenuItem
+                Command="{Binding Tabs.PageSetup}"
+                Header="{x:Static t1:Labels.Print}"
+                InputGestureText="{x:Static t1:Shortcuts.Print}" />
+            <Separator Margin="-30,0,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem
+                Command="{Binding Tabs.SelectedTabItem.Close}"
+                Header="{x:Static t1:Labels.CloseTab}"
+                InputGestureText="{x:Static t1:Shortcuts.CloseTab}" />
+            <MenuItem
+                Command="{Binding CloseAll}"
+                CommandParameter="{Binding}"
+                Header="{x:Static t1:Labels.CloseWindow}"
+                InputGestureText="{x:Static t1:Shortcuts.CloseWindow}" />
+            <MenuItem Command="{Binding CloseAll}" Header="{x:Static t1:Labels.Exit}" />
+        </MenuItem>
+
+        <!--  Edit Header Commands  -->
+        <MenuItem VerticalAlignment="Center" Header="{x:Static t1:Labels.EditHeader}">
+            <MenuItem
+                Command="Undo"
+                Header="{x:Static t1:Labels.Undo}"
+                InputGestureText="{x:Static t1:Shortcuts.Undo}" />
+            <MenuItem
+                Command="Cut"
+                Header="{x:Static t1:Labels.Cut}"
+                InputGestureText="{x:Static t1:Shortcuts.Cut}" />
+            <MenuItem
+                Command="Copy"
+                Header="{x:Static t1:Labels.Copy}"
+                InputGestureText="{x:Static t1:Shortcuts.Copy}" />
+            <MenuItem
+                Command="Paste"
+                Header="{x:Static t1:Labels.Paste}"
+                InputGestureText="{x:Static t1:Shortcuts.Paste}" />
+            <MenuItem
+                Command="{Binding Tabs.SelectedTabItem.Delete}"
+                Header="{x:Static t1:Labels.Delete}"
+                InputGestureText="{x:Static t1:Shortcuts.Delete}" />
+            <Separator Margin="-30,0,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem
+                Command="{Binding Tabs.ShowFindDialog}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.Find}"
+                InputGestureText="{x:Static t1:Shortcuts.Find}" />
+            <MenuItem
+                Command="{Binding FindNext}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.FindNext}"
+                InputGestureText="{x:Static t1:Shortcuts.FindNext}" />
+            <MenuItem
+                Command="{Binding FindPrevious}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.FindPrevious}"
+                InputGestureText="{x:Static t1:Shortcuts.FindPrevious}" />
+            <MenuItem
+                Command="{Binding Tabs.ShowReplaceDialog}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.Replace}"
+                InputGestureText="{x:Static t1:Shortcuts.Replace}" />
+            <MenuItem
+                Command="{Binding GoTo}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.GoTo}"
+                InputGestureText="{x:Static t1:Shortcuts.GoTo}" />
+            <Separator Margin="-30,0,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem
+                Command="SelectAll"
+                Header="{x:Static t1:Labels.SelectAll}"
+                InputGestureText="{x:Static t1:Shortcuts.SelectAll}" />
+            <MenuItem
+                Command="{Binding Tabs.Date}"
+                Header="{x:Static t1:Labels.TimeDate}"
+                InputGestureText="{x:Static t1:Shortcuts.TimeDate}" />
+            <Separator Margin="-30,0,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem
+                Command="{Binding DataContext.Font.ShowFontWindow, RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                Header="{x:Static t1:Labels.Font}"
+                InputGestureText="{x:Static t1:Shortcuts.Font}" />
+        </MenuItem>
+
+        <!--  View Header Commands  -->
+        <MenuItem Header="{x:Static t1:Labels.ViewHeader}">
+            <MenuItem Header="{x:Static t1:Labels.Zoom}">
+                <MenuItem
+                    Command="{Binding View.ZoomIn}"
+                    Header="{x:Static t1:Labels.ZoomIn}"
+                    InputGestureText="{x:Static t1:Shortcuts.ZoomIn}" />
+                <MenuItem
+                    Command="{Binding View.ZoomOut}"
+                    Header="{x:Static t1:Labels.ZoomOut}"
+                    InputGestureText="{x:Static t1:Shortcuts.ZoomOut}" />
+                <MenuItem
+                    Command="{Binding View.RestoreView}"
+                    Header="{x:Static t1:Labels.RestoreView}"
+                    InputGestureText="{x:Static t1:Shortcuts.RestoreView}" />
+            </MenuItem>
+            <Separator Margin="-30,2,0,0" Background="{DynamicResource Seperator}" />
+            <MenuItem
+                Header="{x:Static t1:Labels.Status}"
+                IsCheckable="True"
+                IsChecked="{Binding View.IsFooterVisible}" />
+            <MenuItem
+                Header="{x:Static t1:Labels.WordWrap}"
+                IsCheckable="True"
+                IsChecked="{Binding View.IsWrapping}" />
+        </MenuItem>
+    </Menu>
+
+</UserControl>

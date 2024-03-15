@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NotePadApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CurrentLanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RestorePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\u2b1c</Value>
+    </Setting>
+    <Setting Name="LightTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Themes/LightTheme.xaml</Value>
+    </Setting>
+    <Setting Name="DarkTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Themes/DarkTheme.xaml</Value>
+    </Setting>
+    <Setting Name="CurrentTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="FontWeight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="FontFamily" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Consolas</Value>
+    </Setting>
+    <Setting Name="FontStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="IsWrapping" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsFooterVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsMatchCase" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

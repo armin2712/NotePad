@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Support\FindAndReplaceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FooterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Support\FontView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Support\GoToView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Support\MessageOk.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Support\MessageYesNo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TabContentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ThemeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Assets\Info.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\Labels.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\Shortcuts.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\ComboBoxItemStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ComboBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\GoToButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\MenuStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\WindowNavStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Support\FindAndReplaceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FooterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Support\FontView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Support\GoToView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MenuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Support\MessageOk.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Support\MessageYesNo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TabContentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ThemeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

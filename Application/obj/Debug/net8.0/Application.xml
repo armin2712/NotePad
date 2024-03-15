@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Application</name>
+    </assembly>
+    <members>
+        <member name="T:Application.AppObject">
+            <summary>
+            Supports Application objects with the basic
+            infrastructure
+            </summary>
+        </member>
+        <member name="P:Application.AppObject.Context">
+            <summary>
+            Calls the Infrastructure of the Application
+            or sets it up
+            </summary>
+        </member>
+        <member name="E:Application.AppObject.ErrorOccurred">
+            <summary>
+            Triggers on Exception occurence
+            </summary>
+        </member>
+        <member name="M:Application.AppObject.OnErrorOccured(Application.ErrorOccurredEventArgs)">
+            <summary>
+            Triggers on Error
+            </summary>
+        </member>
+        <member name="F:Application.AppObject._LocalPath">
+            <summary>
+            Internal field for the Property
+            </summary>
+        </member>
+        <member name="P:Application.AppObject.LocalPath">
+            <summary>
+            Gets the Path for Saving in the local
+            AppData Folder of the User
+            </summary>
+        </member>
+        <member name="F:Application.AppObject._RoamingPath">
+            <summary>
+            Internal field for the Property
+            </summary>
+        </member>
+        <member name="P:Application.AppObject.RoamingPath">
+            <summary>
+            Gets the Path for Saving in the roaming folder
+            of the User
+            </summary>
+        </member>
+        <member name="F:Application.AppObject._AppPath">
+            <summary>
+            Internal field for the Property
+            </summary>
+        </member>
+        <member name="P:Application.AppObject.AppPath">
+            <summary>
+            Gets the Application Folder
+            </summary>
+        </member>
+        <member name="T:Application.Controller.LanguageXmlController">
+            <summary>
+            Provides an Service for Lanuguage 
+            reading and writing
+            in Xml-Format
+            </summary>
+        </member>
+        <member name="M:Application.Controller.LanguageXmlController.GetFromRessource">
+            <summary>
+            Returns a list with supported languages
+            from the Assembly-Ressources
+            </summary>
+            <exception cref="T:System.Exception">
+            if an error occurs while the procces is ongoing
+            </exception>
+        </member>
+        <member name="T:Application.Controller.WindowXmlController">
+            <summary>
+            Provides a Service for serialization in Xml-Format
+            </summary>
+        </member>
+        <member name="T:Application.Controller.XmlController`1">
+            <summary>
+            Provides an Service for serialisation in Xml form
+            </summary>
+        </member>
+        <member name="M:Application.Controller.XmlController`1.Save(System.String,`0)">
+            <summary>
+            Serializes the list in Xml Format into the file
+            </summary>
+            <param name="path">The Path of the file</param>
+            <param name="data">the list with data for 
+            serialisation</param>
+            /// <exception cref="T:System.Exception">
+            if an error occurs while the procces is ongoing
+            </exception>
+        </member>
+        <member name="M:Application.Controller.XmlController`1.Read(System.String)">
+            <summary>
+            Returns the list with deserialized data
+            </summary>
+            <param name="path">Path of the Xml file</param>
+            /// <exception cref="T:System.Exception">
+            if an error occurs while the procces is ongoing
+            </exception>
+        </member>
+        <member name="T:Application.Data.Languages">
+            <summary>
+            Provides a list of Application Languages
+            </summary>
+        </member>
+        <member name="T:Application.Data.Language">
+            <summary>
+            Describes an Application Language
+            </summary>
+        </member>
+        <member name="P:Application.Data.Language.Code">
+            <summary>
+            Calls the 2-place code for CultureInfo
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.Language.Name">
+            <summary>
+            Calls the Name of the Language or
+            sets it up
+            </summary>
+        </member>
+        <member name="M:Application.Data.Language.ToString">
+            <summary>
+            Calls a Text with the Description 
+            of this Language
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Application.Data.WindowInformations">
+            <summary>
+            Provides an List of WindowInformation objects
+            </summary>
+        </member>
+        <member name="T:Application.Data.WindowInformation">
+            <summary>
+            Provides the Information of an 
+            Application Window, for example the Position,
+            Size and Condition
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Name">
+            <summary>
+            Calls the intern Description of a Window
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Condition">
+            <summary>
+            Calls the Window Condition(Normal,Max,Min)
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Left">
+            <summary>
+            Calls the left Position of the Window
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Right">
+            <summary>
+            Calls the right Position of the Window
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Top">
+            <summary>
+            Calls the top Position of the Window
+            or sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Height">
+            <summary>
+            Calls the Height of the Window or 
+            sets it up
+            </summary>
+        </member>
+        <member name="P:Application.Data.WindowInformation.Width">
+            <summary>
+            Calls the Width of the Window or 
+            sets it up
+            </summary>
+        </member>
+        <member name="M:Application.Data.WindowInformation.ToString">
+            <summary>
+            Returns a Text that describes
+            this WindowInformation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Application.ErrorOccurredEventArgs">
+            <summary>
+            Provides data for ErrorOcurred Evenet
+            </summary>
+        </member>
+        <member name="P:Application.ErrorOccurredEventArgs.Exception">
+            <summary>
+            Calls the Exception object of the Error
+            </summary>
+        </member>
+        <member name="M:Application.ErrorOccurredEventArgs.#ctor(System.Exception)">
+            <summary>
+            Initialized a new ErrorOccuredEventArgs Object
+            </summary>
+            <param name="exception">Exception object with the
+            description of the Error</param>
+        </member>
+        <member name="T:Application.ErrorOccurredEventHandler">
+            <summary>
+            Provides the Method, that handles the ErrorOccured Event
+            </summary>
+            <param name="sender">Caller of the Method</param>
+            <param name="e">Event data</param>
+        </member>
+        <member name="T:Application.Infrastructure">
+            <summary>
+            Provides an Application context
+            </summary>
+        </member>
+        <member name="M:Application.Infrastructure.Produce``1">
+            <summary>
+            Returns an initialized application object with the context set
+            </summary>
+            <typeparam name="T">A class that extends the AppObject and owns a public parameterless constructor</typeparam>
+            <returns>An AppObject with set context</returns>
+        </member>
+        <member name="M:Application.Infrastructure.ReportException(System.Object,Application.ErrorOccurredEventArgs)">
+            <summary>
+            Sets in the Console of the Studio
+            a Message that an Exception has been triggerd
+            </summary>
+        </member>
+        <member name="F:Application.Infrastructure._Languages">
+            <summary>
+            Internal field
+            </summary>
+        </member>
+        <member name="P:Application.Infrastructure.Languages">
+            <summary>
+            Calls the Service for managing the Application
+            Language
+            </summary>
+        </member>
+        <member name="F:Application.Infrastructure._Window">
+            <summary>
+            Internal field
+            </summary>
+        </member>
+        <member name="P:Application.Infrastructure.Window">
+            <summary>
+            Calls the Service for managing the Application
+            Window
+            </summary>
+        </member>
+        <member name="T:Application.Manager.LanguageManager">
+            <summary>
+            Provides an Service for Language handling
+            </summary>
+        </member>
+        <member name="F:Application.Manager.LanguageManager._Controller">
+            <summary>
+            Internal Field for the property
+            </summary>
+        </member>
+        <member name="P:Application.Manager.LanguageManager.Controller">
+            <summary>
+            Calls the Service for reading and writing
+            of the Languages
+            </summary>
+        </member>
+        <member name="F:Application.Manager.LanguageManager._List">
+            <summary>
+            Internal field for supported languages
+            </summary>
+        </member>
+        <member name="P:Application.Manager.LanguageManager.List">
+            <summary>
+            Calls the List of the Supported Languages
+            </summary>
+        </member>
+        <member name="M:Application.Manager.LanguageManager.Determine(System.String)">
+            <summary>
+            Sets a language as the current language
+            </summary>
+            <param name="code">Iso2Code of the language
+            that will be set as the current language</param>
+        </member>
+        <member name="F:Application.Manager.LanguageManager._CurrentLanguage">
+            <summary>
+            Internal field 
+            </summary>
+        </member>
+        <member name="P:Application.Manager.LanguageManager.CurrentLanguage">
+            <summary>
+            Calls the Current Language or sets it up
+            </summary>
+        </member>
+        <member name="T:Application.Manager.WindowManager">
+            <summary>
+            Service for Window Management
+            </summary>
+        </member>
+        <member name="F:Application.Manager.WindowManager.SystemMetricsInfo.MonitorCount">
+            <summary>
+            SM_CMONITORS
+            </summary>
+        </member>
+        <member name="F:Application.Manager.WindowManager.SystemMetricsInfo.XScreen">
+            <summary>
+            SM_CXSCREEN
+            </summary>
+        </member>
+        <member name="F:Application.Manager.WindowManager.SystemMetricsInfo.YScreen">
+            <summary>
+            SM_CYSCREEN
+            </summary>
+        </member>
+        <member name="M:Application.Manager.WindowManager.GetSystemMetrics(Application.Manager.WindowManager.SystemMetricsInfo)">
+            <summary>
+            Gets the Information about the window
+            </summary>
+            <param name="info">Integer type,what kind of info about the Window
+            is wanted </param>
+        </member>
+        <member name="P:Application.Manager.WindowManager.MonitorKey">
+            <summary>
+            Gets a Code, with which the current Monitor configuration
+            can be distinguished
+            </summary>
+        </member>
+        <member name="F:Application.Manager.WindowManager._List">
+            <summary>
+            Internal field
+            </summary>
+        </member>
+        <member name="P:Application.Manager.WindowManager.List">
+            <summary>
+            Calls the listing of the Window data
+            </summary>
+        </member>
+        <member name="M:Application.Manager.WindowManager.Deposit(Application.Data.WindowInformation)">
+            <summary>
+            Adds or updates the Window data in the Manager
+            </summary>
+            <param name="window">WindowInformation
+            Object</param>
+        </member>
+        <member name="M:Application.Manager.WindowManager.Fetch(System.String)">
+            <summary>
+            Return WindowInformation Object for the whished Window
+            </summary>
+            <param name="windowName">Internal Window name
+            as key</param>
+            <returns>WindowInformation object with a name
+            or null, if the Window is not yet registred</returns>
+        </member>
+        <member name="F:Application.Manager.WindowManager._StandardPath">
+            <summary>
+            Internal Field
+            </summary>
+        </member>
+        <member name="P:Application.Manager.WindowManager.StandardPath">
+            <summary>
+            Calls the Save place path of the File
+            with the managed Window
+            </summary>
+        </member>
+        <member name="F:Application.Manager.WindowManager._Controller">
+            <summary>
+            Internal field
+            </summary>
+        </member>
+        <member name="P:Application.Manager.WindowManager.Controller">
+            <summary>
+            Calls the Service for serialization
+            and deserialization of the managed Window
+            </summary>
+        </member>
+        <member name="M:Application.Manager.WindowManager.Save">
+            <summary>
+            Writes the List with the managed Window
+            in the File of the Standard path
+            </summary>
+        </member>
+        <member name="M:Application.Manager.WindowManager.Read">
+            <summary>
+            Returns a List with saved WindowInformations
+            Objects from the File in the StandardPath
+            </summary>
+        </member>
+        <member name="M:Application.Manager.WindowManager.CreateNewWindow">
+            <summary>
+            Creates a new window of the app
+            </summary>
+        </member>
+        <member name="T:Application.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:Application.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:Application.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:Application.Properties.Resources.Languages">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;languages&gt;
+            	&lt;language code=&quot;en&quot; name=&quot;English&quot;/&gt;
+            	&lt;language code=&quot;de&quot; name=&quot;German&quot;/&gt;
+            &lt;/languages&gt;
+            
+             ähnelt.
+             </summary>
+        </member>
+        <member name="T:Application.Tools.AssemblyInfo">
+            <summary>
+            Provides Extension Methods to retrive Methdata
+            like App name
+            </summary>
+        </member>
+        <member name="M:Application.Tools.AssemblyInfo.GetAppName(System.Object)">
+            <summary>
+            Gives from the Assembly, that was used for 
+            the Startup of the App, the Setting of
+            AssemlbyProductAttribute back.
+            </summary>
+            <param name="source">The object that needs 
+            the Info
+            </param>
+            <returns>Gives the Setting back or and empty
+            string if the Attribute is not set up</returns>
+        </member>
+        <member name="M:Application.Tools.AssemblyInfo.GetVersion(System.Object)">
+            <summary>
+            Gives the Version from the Assembly
+            </summary>
+            <param name="source">The Object that
+            needs the Info</param>
+            <returns>Gives the App Major.Minor number
+            back or an string.Empty if the Attribute
+            is not set up</returns>
+        </member>
+        <member name="M:Application.Tools.AssemblyInfo.GetCopyright(System.Object)">
+            <summary>
+            Gives the AssemblyCopyrightAttribute
+            of the Assembly back
+            </summary>
+            <param name="source">The Object that needs the
+            Info</param>
+            <returns>Gives an Setting back or
+            string.Empty if the Attribute is not
+            set up</returns>
+        </member>
+        <member name="T:Application.Tools.Support">
+            <summary>
+            Provides Support Methods 
+            </summary>
+        </member>
+        <member name="M:Application.Tools.Support.GetLocalization(System.String)">
+            <summary>
+            Returns the text supplemented by 
+            any existing language folder
+            </summary>
+            <param name="base">The Path, that needs to be
+            checked, if a localized subfolder for the 
+            current culture exists</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

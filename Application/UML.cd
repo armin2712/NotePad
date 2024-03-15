@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Controller">
+    <Position X="5.646" Y="0.542" Height="0.448" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Applicaton context">
+    <Position X="0.5" Y="0.5" Height="0.406" Width="4.075" />
+  </Comment>
+  <Comment CommentText="Managers&#xD;&#xA;">
+    <Position X="3.781" Y="5.385" Height="0.375" Width="4.297" />
+  </Comment>
+  <Comment CommentText="Tools&#xD;&#xA;">
+    <Position X="9.889" Y="5.833" Height="0.389" Width="3.756" />
+  </Comment>
+  <Comment CommentText="Data">
+    <Position X="10.861" Y="0.528" Height="0.431" Width="4.992" />
+  </Comment>
+  <Class Name="Application.Controller.LanguageXmlController">
+    <Position X="5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Controller\LanguageXmlController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Controller.WindowXmlController">
+    <Position X="7.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\WindowXmlController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Controller.XmlController&lt;T&gt;">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\XmlController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Infrastructure">
+    <Position X="0.5" Y="1.25" Width="1.75" />
+    <Members>
+      <Field Name="_Languages" Hidden="true" />
+      <Field Name="_Window" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BCAAAAAACAAAAAAAAIAAAAAAAABAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Infrastructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Manager.LanguageManager">
+    <Position X="3.5" Y="6.25" Width="2" />
+    <Members>
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_CurrentLanguage" Hidden="true" />
+      <Field Name="_List" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAAAAQAAAAEAAAAAAAAAAAAAAAIAAAEI=</HashCode>
+      <FileName>Manager\LanguageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Manager.WindowManager">
+    <Position X="6" Y="6.25" Width="2.25" />
+    <Members>
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_List" Hidden="true" />
+      <Field Name="_StandardPath" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAAAAAAQAEAAFAgAAAAAAACAAAAAAAAAAI=</HashCode>
+      <FileName>Manager\WindowManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.ErrorOccurredEventArgs">
+    <Position X="0.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ErrorOccurred.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Tools.AssemblyInfo">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAQAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\AssemblyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Tools.Support">
+    <Position X="12" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Support.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Data.Languages">
+    <Position X="10.75" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Language.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Data.Language">
+    <Position X="10.75" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Language.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Data.WindowInformations">
+    <Position X="14" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\WindowInformations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.Data.WindowInformation">
+    <Position X="13.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABACAAAAEAAAAAEQAAAAIAAAACACAAAAAAAA=</HashCode>
+      <FileName>Data\WindowInformations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application.AppObject">
+    <Position X="2.5" Y="1.25" Width="2" />
+    <Members>
+      <Field Name="_AppPath" Hidden="true" />
+      <Field Name="_LocalPath" Hidden="true" />
+      <Field Name="_RoamingPath" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQgABAAAAAAACAAAAASAAQAAAAAAAQAAAAAA=</HashCode>
+      <FileName>AppObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="Application.ErrorOccurredEventHandler">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorOccurred.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

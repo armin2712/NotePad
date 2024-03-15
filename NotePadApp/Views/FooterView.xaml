@@ -1,0 +1,115 @@
+﻿<UserControl
+    x:Class="NotePadApp.Views.FooterView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:NotePadApp.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:t1="clr-namespace:NotePadApp.Assets"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+
+    <Grid Margin="0" Background="{DynamicResource HeaderFooter}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="150" />
+        </Grid.ColumnDefinitions>
+        <!--  Stats col/ln  -->
+        <StackPanel
+            Margin="10,0,10,0"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="0,0,5,0"
+                Foreground="{DynamicResource BodyText}"
+                Text="{x:Static t1:Info.Line}" />
+            <TextBlock Foreground="{DynamicResource BodyText}" Text="{Binding Tabs.SelectedTabItem.Caret.Line}" />
+            <TextBlock Foreground="{DynamicResource BodyText}" Text=", " />
+            <TextBlock
+                Margin="0,0,5,0"
+                Foreground="{DynamicResource BodyText}"
+                Text="{x:Static t1:Info.Column}" />
+            <TextBlock Foreground="{DynamicResource BodyText}" Text="{Binding Tabs.SelectedTabItem.Caret.Column}" />
+
+        </StackPanel>
+
+        <!--  Character count  -->
+        <Rectangle
+            Grid.Column="1"
+            Width="1"
+            Margin="0,3"
+            HorizontalAlignment="Left"
+            Fill="{DynamicResource Seperator}" />
+
+        <StackPanel
+            Grid.Column="1"
+            Margin="10,0,10,0"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="0,0,5,0"
+                Foreground="{DynamicResource BodyText}"
+                Text="{Binding Tabs.SelectedTabItem.CharCount}" />
+            <TextBlock
+                Margin="5,0,5,0"
+                Foreground="{DynamicResource BodyText}"
+                Text="{x:Static t1:Info.Characters}" />
+        </StackPanel>
+
+        <!--  Zoom  -->
+        <StackPanel
+            Grid.Column="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="0"
+                VerticalAlignment="Center"
+                Foreground="{DynamicResource BodyText}"
+                Text="{Binding View.Zoom}" />
+            <TextBlock
+                Margin="0"
+                VerticalAlignment="Center"
+                Foreground="{DynamicResource BodyText}"
+                Text="%" />
+        </StackPanel>
+        <Rectangle
+            Grid.Column="2"
+            Width="1"
+            Margin="0,3"
+            HorizontalAlignment="Left"
+            Fill="{DynamicResource Seperator}" />
+
+        <!--  Windows CRLF  -->
+        <TextBlock
+            Grid.Column="3"
+            Margin="10,0,0,0"
+            VerticalAlignment="Center"
+            Foreground="{DynamicResource BodyText}"
+            Text="{x:Static t1:Info.Crlf}" />
+        <Rectangle
+            Grid.Column="3"
+            Width="1"
+            Margin="0,3"
+            HorizontalAlignment="Left"
+            Fill="{DynamicResource Seperator}" />
+        <!--  Enconding  -->
+        <TextBlock
+            Grid.Column="4"
+            Margin="10,0,0,0"
+            VerticalAlignment="Center"
+            Foreground="{DynamicResource BodyText}"
+            Text="{x:Static t1:Info.Encoding}" />
+        <Rectangle
+            Grid.Column="4"
+            Width="1"
+            Margin="0,3"
+            HorizontalAlignment="Left"
+            Fill="{DynamicResource Seperator}" />
+    </Grid>
+</UserControl>

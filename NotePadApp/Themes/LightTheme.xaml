@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="HeaderFooter" Color="#FAEEFA" />
+    <SolidColorBrush x:Key="Body" Color="#F9F9F9" />
+    <SolidColorBrush x:Key="HeaderFooterText" Color="#4E4E4E" />
+    <SolidColorBrush x:Key="BodyText" Color="#1F232A" />
+    <SolidColorBrush x:Key="Tab" Color="#F3D5F3" />
+    <SolidColorBrush x:Key="TabContent" Color="#99110E19" />
+    <SolidColorBrush x:Key="ButtonMouseOver" Color="#64AAAAAA" />
+    <SolidColorBrush x:Key="ButtonPressed" Color="#89AAAAAA" />
+    <SolidColorBrush x:Key="Seperator" Color="#64AAAAAA" />
+    <SolidColorBrush x:Key="IsSavedColor" Color="#AA5E5C63" />
+    <SolidColorBrush x:Key="MenuItem" Color="#64AAAAAA" />
+    <SolidColorBrush x:Key="SubMenu" Color="#EBFAEEFA" />
+    <SolidColorBrush x:Key="MouseOver.GoTo.Cancel" Color="#F0E4F0" />
+    <SolidColorBrush x:Key="MouseOver.GoTo" Color="#0067C0" />
+    <SolidColorBrush x:Key="ReplaceButton" Color="#F0E4F0" />
+    <SolidColorBrush x:Key="NotSelectedTab" Color="#FCCEE5" />
+    <Color
+        x:Key="ShadowFindWindow"
+        A="255"
+        B="243"
+        G="213"
+        R="243" />
+    <SolidColorBrush x:Key="FontList" Color="#F9F9F9" />
+    <SolidColorBrush x:Key="FontList.MouseOver" Color="#EFEFEF" />
+
+
+
+</ResourceDictionary>

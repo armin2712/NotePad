@@ -1,0 +1,206 @@
+﻿<Window
+    x:Class="NotePadApp.Views.Support.GoToView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:info="clr-namespace:NotePadApp.Assets"
+    xmlns:local="clr-namespace:NotePadApp.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="GoToView"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Loaded="Window_Loaded"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            CaptionHeight="0"
+            CornerRadius="20"
+            GlassFrameThickness="0.3"
+            ResizeBorderThickness="0" />
+
+    </WindowChrome.WindowChrome>
+
+    <Window.InputBindings>
+        <KeyBinding Key="Esc" Command="{Binding Navigation.Window.Close}" />
+        <KeyBinding
+            Key="Return"
+            Command="{Binding GoToLine}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" />
+
+    </Window.InputBindings>
+    <Window.Effect>
+        <DropShadowEffect
+            BlurRadius="20"
+            Direction="300"
+            Opacity="0.2"
+            ShadowDepth="40"
+            Color="{DynamicResource ShadowFindWindowColor}" />
+    </Window.Effect>
+
+    <Border
+        Margin="0"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        Background="#4C000000"
+        CornerRadius="10">
+
+
+        <Border
+            Grid.Row="0"
+            Width="352"
+            Height="222"
+            Margin="0"
+            Background="{DynamicResource HeaderFooter}"
+            BorderBrush="{DynamicResource BodyText}"
+            BorderThickness="0.4"
+            CornerRadius="10">
+            <Grid
+                Width="350"
+                Height="220"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+                <Border
+                    Grid.Row="0"
+                    Margin="1"
+                    Background="{DynamicResource HeaderFooter}"
+                    BorderBrush="{DynamicResource BodyText}"
+                    CornerRadius="10 10 0 0" />
+
+                <StackPanel Grid.Row="0" Orientation="Vertical">
+                    <!--  Go to title  -->
+                    <TextBlock
+                        Margin="20"
+                        FontSize="15pt"
+                        FontWeight="DemiBold"
+                        Foreground="{DynamicResource BodyText}"
+                        Text="{x:Static info:Info.GoToLine}" />
+                    <!--  Line number  -->
+                    <TextBlock
+                        Margin="20,0,0,0"
+                        VerticalAlignment="Center"
+                        FontSize="10pt"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource BodyText}"
+                        Text="{x:Static info:Info.LineNumber}" />
+                    <Border
+                        Margin="20,5,20,0"
+                        Background="{DynamicResource Tab}"
+                        BorderBrush="{DynamicResource BodyText}"
+                        BorderThickness="0.3"
+                        CornerRadius="5">
+                        <Grid
+                            Height="30"
+                            VerticalAlignment="Center"
+                            Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="33" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--  Input box  -->
+                            <TextBox
+                                x:Name="SearchTermTextBox"
+                                Grid.Column="0"
+                                Margin="6"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                CaretBrush="{DynamicResource BodyText}"
+                                DataObject.Pasting="TextBoxPasting"
+                                Foreground="{DynamicResource BodyText}"
+                                PreviewTextInput="TextBlock_PreviewTextInput"
+                                Text="{Binding Navigation.Line, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            <!--  Placeholder/Hint text  -->
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="11pt"
+                                Foreground="Gray"
+                                IsHitTestVisible="False"
+                                Text="{x:Static info:Info.GoToSuggestion}">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                            <!--  Delete input button  -->
+                            <Button
+                                Grid.Column="1"
+                                VerticalAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                Command="{Binding Navigation.ClearInput}"
+                                Content="&#x2715;"
+                                FontFamily="Segoe UI Symbol"
+                                FontSize="9pt"
+                                Style="{StaticResource AppSymbol}"
+                                Template="{StaticResource ButtonTemplate}" />
+                            <Rectangle
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Height="0.8"
+                                Margin="2,0,2,1"
+                                VerticalAlignment="Bottom"
+                                Fill="{DynamicResource MouseOver.GoTo}" />
+
+
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <!--  Answer buttons  -->
+                <Border
+                    Grid.Row="1"
+                    Margin="0"
+                    Background="{DynamicResource Tab}"
+                    BorderBrush="{DynamicResource BodyText}"
+                    CornerRadius="0 0 10 10" />
+                <Grid
+                    Grid.Row="1"
+                    Margin="20,25,20,25"
+                    Background="{DynamicResource Tab}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        Grid.Column="0"
+                        Margin="0,0,15,0"
+                        Command="{Binding GoToLine}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                        Content="{x:Static info:Info.GoToBtn}"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource Body}"
+                        Style="{DynamicResource GoToStyle}" />
+
+                    <Button
+                        Grid.Column="1"
+                        Margin="15,0,0,0"
+                        Command="{Binding Navigation.Window.Close}"
+                        Content="{x:Static info:Info.Cancel}"
+                        FontWeight="Medium"
+                        Style="{DynamicResource CancelGoTo}" />
+
+                </Grid>
+            </Grid>
+
+        </Border>
+    </Border>
+
+
+</Window>
+
+

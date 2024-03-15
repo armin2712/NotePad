@@ -1,0 +1,77 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NotePadApp/2024.1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77",
+          "WPF.Window.Support": "1.0.0"
+        },
+        "runtime": {
+          "NotePadApp.dll": {}
+        },
+        "resources": {
+          "de/NotePadApp.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.77": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.77.27830"
+          }
+        }
+      },
+      "Application/1.0.0": {
+        "runtime": {
+          "Application.dll": {}
+        },
+        "resources": {
+          "de/Application.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "WPF.Window.Support/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77"
+        },
+        "runtime": {
+          "WPF.Window.Support.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NotePadApp/2024.1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.77": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MCu674ZETgU18EbxfwIlRpUPJ02YbZenLsMCXTkpeA7KUBpXfFaOUDlEO+7UWu5AFnUoydg+aQENJkuaZPheMQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.77",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPF.Window.Support/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

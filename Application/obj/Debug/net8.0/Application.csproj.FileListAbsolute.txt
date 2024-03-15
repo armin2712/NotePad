@@ -1,0 +1,19 @@
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\Application.dll.config
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\Application.dll
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\Application.xml
+C:\Users\User\Desktop\c#\NotePadApp\Application\bin\Debug\net8.0\de\Application.resources.dll
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.Properties.Resources.resources
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.Properties.Resources .de.resources
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.csproj.GenerateResource.cache
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\de\Application.resources.dll
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.dll
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.xml
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\User\Desktop\c#\NotePadApp\Application\obj\Debug\net8.0\ref\Application.dll

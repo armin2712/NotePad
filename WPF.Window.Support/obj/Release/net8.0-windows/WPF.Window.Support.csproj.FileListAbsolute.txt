@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\WPF.Window.Support.deps.json
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\WPF.Window.Support.dll
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\Application.dll
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\Application.xml
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\Application.dll.config
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\bin\Release\net8.0-windows\de\Application.resources.dll
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.AssemblyInfo.cs
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Wind.8E8BB862.Up2Date
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\WPF.Window.Support.dll
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\refint\WPF.Window.Support.dll
+C:\Users\User\Desktop\c#\NotePadApp\WPF.Window.Support\obj\Release\net8.0-windows\ref\WPF.Window.Support.dll
