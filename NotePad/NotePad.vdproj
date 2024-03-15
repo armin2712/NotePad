@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C9AE0B7E90DE4241A5AE18402F555BB8"
+        "MsmKey" = "8:_582D59C46BC94FC6B7E5AE31EB75839D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -183,7 +191,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NotePad"
         "ProductCode" = "8:{349BE12E-0673-4DF9-9565-18ECC6F3BF8F}"
-        "PackageCode" = "8:{B1C8FF76-8983-4075-99B4-4C1B5147FFB5}"
+        "PackageCode" = "8:{52DB4069-E892-4C9C-B219-B7F54EE688CB}"
         "UpgradeCode" = "8:{FE9B9FFC-BE30-43EE-B413-389F2C987C94}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -303,7 +311,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C77FDA9B28FA4BB1AFF6C7C179B199B2"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7C4CF9243A304D46B33EC79CF2921005"
             {
             "Name" = "8:NotePad"
             "Arguments" = "8:"
@@ -311,13 +319,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_C9AE0B7E90DE4241A5AE18402F555BB8"
+            "Target" = "8:_582D59C46BC94FC6B7E5AE31EB75839D"
             "Folder" = "8:_7E63955F4D88475582DE3099002EEEE7"
             "WorkingFolder" = "8:_AE633FF4126B469FA7BD6DB091AAEEDF"
             "Icon" = "8:_015D6D62D80243AFB5ACB133B1218035"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E125CD7A14874274A0BF51BD203B1CF9"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B04CD7F20A204F9CB0BF7872D32B269B"
             {
             "Name" = "8:NotePad"
             "Arguments" = "8:"
@@ -325,7 +333,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_C9AE0B7E90DE4241A5AE18402F555BB8"
+            "Target" = "8:_582D59C46BC94FC6B7E5AE31EB75839D"
             "Folder" = "8:_F9D05D1F744D4BA8AEFD60AE560342DE"
             "WorkingFolder" = "8:_AE633FF4126B469FA7BD6DB091AAEEDF"
             "Icon" = "8:_015D6D62D80243AFB5ACB133B1218035"
@@ -758,7 +766,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C9AE0B7E90DE4241A5AE18402F555BB8"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_582D59C46BC94FC6B7E5AE31EB75839D"
             {
             "SourcePath" = "8:..\\NotePadApp\\obj\\Release\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"
