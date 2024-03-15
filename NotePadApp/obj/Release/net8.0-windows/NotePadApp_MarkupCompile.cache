@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\c#\NotePadApp\NotePadApp\obj\Release\net8.0-windows\
+C:\Users\midza\Desktop\NotePad-main\NotePad-main\NotePadApp\obj\Release\net8.0-windows\
 NotePadApp
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\User\Desktop\c#\NotePadApp\NotePadApp\App.xaml
+C:\Users\midza\Desktop\NotePad-main\NotePad-main\NotePadApp\App.xaml
 17-348497745
 
 361199184122
-201-1280023944
+201-216218494
 Styles\ComboBoxItemStyle.xaml;Styles\ComboBoxStyle.xaml;Styles\GoToButton.xaml;Styles\MenuStyle.xaml;Styles\WindowNavStyle.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Views\FooterView.xaml;Views\MainWindow.xaml;Views\MenuView.xaml;Views\Support\FindAndReplaceView.xaml;Views\Support\FontView.xaml;Views\Support\GoToView.xaml;Views\Support\MessageOk.xaml;Views\Support\MessageYesNo.xaml;Views\TabContentView.xaml;Views\ThemeView.xaml;
 
 False

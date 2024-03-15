@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nM3R6gFwrlTE4cmBZQ8qKdC+9/IRm3QAFg4Q6KMbTis8sevjzL13Ol7LVL7pNi+CMip3o9TMX6olF0Cu53xvWQ==",
+  "dgSpecHash": "w/ArSD+1RREMxi9qIPVXtn0cwpX9s07C0P5GMUAzOSCe2JRM/MAkrf+SQGCrOQqMIsrLsLIsBh+92bgidAGSIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\NotePadApp.csproj",
+  "projectFilePath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\midza\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],

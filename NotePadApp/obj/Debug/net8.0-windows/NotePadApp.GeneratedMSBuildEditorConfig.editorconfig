@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NotePadApp
-build_property.ProjectDir = C:\Users\midza\Documents\GitHub\NotePad\NotePadApp\
+build_property.ProjectDir = C:\Users\midza\Desktop\NotePad-main\NotePad-main\NotePadApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

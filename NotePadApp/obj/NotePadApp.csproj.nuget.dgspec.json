@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\NotePadApp.csproj": {}
+    "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj": {
+    "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\midza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\obj\\",
+        "outputPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\midza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,18 +60,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\NotePadApp.csproj": {
+    "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj": {
       "version": "2024.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\NotePadApp.csproj",
+        "projectUniqueName": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj",
         "projectName": "NotePadApp",
-        "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\NotePadApp.csproj",
+        "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj",
         "packagesPath": "C:\\Users\\midza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\NotePadApp\\obj\\",
+        "outputPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\midza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,11 +88,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj"
+              "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj"
               },
-              "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj": {
-                "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj"
+              "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj": {
+                "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj"
               }
             }
           }
@@ -96,6 +101,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -126,18 +136,18 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj": {
+    "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj",
+        "projectUniqueName": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj",
         "projectName": "WPF.Window.Support",
-        "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj",
+        "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj",
         "packagesPath": "C:\\Users\\midza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\obj\\",
+        "outputPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\midza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -154,8 +164,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\Application\\Application.csproj"
+              "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\Application\\Application.csproj"
               }
             }
           }
@@ -164,6 +174,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -194,7 +209,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

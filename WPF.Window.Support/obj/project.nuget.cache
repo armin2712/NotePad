@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDc2t5om9/3dCkOcPYhZaNqAbkzM6mBLLy/oqFxAue6UeX5/4ApGtuf+jEnVCOKPtaKrRGQCeO3KCzlq1h8m8w==",
+  "dgSpecHash": "GIe8Mzb/wjfvmvJ0nVhomwaZlvb8v8Ldn8gUaqslidN4RiVvX2PFC5vhZw6uaCYjFB7S5P8V/lWO1nYf+QK0Eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\midza\\Documents\\GitHub\\NotePad\\WPF.Window.Support\\WPF.Window.Support.csproj",
+  "projectFilePath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\midza\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
