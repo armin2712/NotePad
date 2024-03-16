@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w/ArSD+1RREMxi9qIPVXtn0cwpX9s07C0P5GMUAzOSCe2JRM/MAkrf+SQGCrOQqMIsrLsLIsBh+92bgidAGSIA==",
+  "dgSpecHash": "Nr1LZ7TbIaLS+Wd771Fqb1nHOtSfN0kzxCbAvjw1xGXwQ/2CWhiMSTU4HA93G0vFMMKZ23UN1i6eX+yYh4n7lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\NotePad-main\\NotePad-main\\NotePadApp\\NotePadApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\midza\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
   "logs": []
 }

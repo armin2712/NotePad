@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GIe8Mzb/wjfvmvJ0nVhomwaZlvb8v8Ldn8gUaqslidN4RiVvX2PFC5vhZw6uaCYjFB7S5P8V/lWO1nYf+QK0Eg==",
+  "dgSpecHash": "cVG4Nr3yaO3Ouw4W+ODTMkI3VSNl0RFimqJgh1nOXwVUC/HFVGIA7ISQ1Ab2SDvhrAU/rEq6LVvOZilv3nDC3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\midza\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\NotePad-main\\NotePad-main\\WPF.Window.Support\\WPF.Window.Support.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\midza\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
   "logs": []
 }
