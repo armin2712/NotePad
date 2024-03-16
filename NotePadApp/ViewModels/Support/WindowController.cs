@@ -107,14 +107,16 @@ namespace NotePadApp.ViewModels.Support
             Window.ShowInTaskbar = false;
 
             // Handle the LocationChanged and SizeChanged events of the main window
-            CallingWindow.LocationChanged += (sender, e) => UpdateWindowPositionAndSize(CallingWindow, Window);
-            CallingWindow.SizeChanged += (sender, e) => UpdateWindowPositionAndSize(CallingWindow, Window);
+            this.CallingWindow.LocationChanged += (sender, e) 
+                => UpdateWindowPositionAndSize(Window);
+            this.CallingWindow.SizeChanged += (sender, e) 
+                => UpdateWindowPositionAndSize(Window);
 
             // Set the initial position and size for the window
-            UpdateWindowPositionAndSize(CallingWindow, Window);
+            UpdateWindowPositionAndSize(Window);
 
             // Display the window
-            Window.DataContext = CallingWindow.DataContext;
+            Window.DataContext = this.CallingWindow.DataContext;
 
             if (this.WindowType == WindowType.MessageBox)
             {
@@ -127,15 +129,17 @@ namespace NotePadApp.ViewModels.Support
             }
 
             // Unsubscribe from events when the calling window is closed
-            CallingWindow.Closed += (sender, e) =>
+            this.CallingWindow.Closed += (sender, e) =>
             {
                 var window = System.Windows.Application.Current.Windows
                     .OfType<T>().FirstOrDefault
                     (w => string.Compare(w.Name, this.WindowName) == 0);
                 if (window != null)
                 {
-                    CallingWindow.LocationChanged -= (sender, e) => UpdateWindowPositionAndSize(CallingWindow, window!);
-                    CallingWindow.SizeChanged -= (sender, e) => UpdateWindowPositionAndSize(CallingWindow, window!);
+                    this.CallingWindow.LocationChanged -= (sender, e) 
+                    => UpdateWindowPositionAndSize(window!);
+                    this.CallingWindow.SizeChanged -= (sender, e) => 
+                    UpdateWindowPositionAndSize(window!);
                 }
             };
 
@@ -146,32 +150,68 @@ namespace NotePadApp.ViewModels.Support
         /// </summary>
         /// <param name="callingWindow">The main window.</param>
         /// <param name="window">The window to be updated.</param>
-        private void UpdateWindowPositionAndSize(System.Windows.Window callingWindow,
+        private void UpdateWindowPositionAndSize(
             System.Windows.Window window)
         {
             if (this.WindowType == WindowType.FindWindow)
             {
-                double offsetLeft = callingWindow.Width * 0.3;
-                double offsetTop = 80;
-                double offsetWidth = callingWindow.Width * 0.4;
+                if (this.CallingWindow.WindowState != WindowState.Maximized)
+                {
+                    //The reason we check whether the window state is maximized
+                    //is because in the view, due to design constraints,
+                    //we don't have window style, and things like drag to minimize
+                    //and similar functionalities I have to implement myself.
+                    //To achieve the desired appearance in the maximized state,
+                    //the coordinates cannot be accurately read,
+                    //so we take the data from the screen rather than the calling window.
 
-                double newX = callingWindow.Left + offsetLeft;
-                double newY = callingWindow.Top + offsetTop;
-                double newW = callingWindow.Width - offsetWidth;
+                    double offsetLeft = this.CallingWindow.Width * 0.3;
+                    double offsetTop = 80;
+                    double offsetWidth = this.CallingWindow.Width * 0.4;
 
-                // Set the new position and size for the window
-                window.Left = newX;
-                window.Top = newY;
-                window.Width = newW;
+                    double newX = this.CallingWindow.Left + offsetLeft;
+                    double newY = this.CallingWindow.Top + offsetTop;
+                    double newW = this.CallingWindow.Width - offsetWidth;
+
+                    // Set the new position and size for the window
+                    window.Left = newX;
+                    window.Top = newY;
+                    window.Width = newW;
+                }
+                else
+                {
+                    double offsetLeft =
+                        System.Windows.SystemParameters.PrimaryScreenWidth * 0.7;
+                    double offsetWidth = System.Windows.SystemParameters.PrimaryScreenWidth * 0.4;
+
+                    double newX = System.Windows.SystemParameters.PrimaryScreenWidth - offsetLeft;
+                    double newW = System.Windows.SystemParameters.PrimaryScreenWidth - offsetWidth;
+
+                    // Set the new position and size for the window
+                    window.Left = newX;
+                    window.Top = 80;
+                    window.Width = newW;
+                }
             }
             else
             {
+                if (this.CallingWindow.WindowState != WindowState.Maximized)
+                {
+                    // Set the position and size of the GoTo window to match the main window
+                    window.Left = this.CallingWindow.Left;
+                    window.Top = this.CallingWindow.Top;
+                    window.Height = this.CallingWindow.Height;
+                    window.Width = this.CallingWindow.Width;
+                }
+                else
+                {
+                    // Set the position and size of the GoTo window to match the main window
+                    window.Left = 0;
+                    window.Top = 0;
+                    window.Height = System.Windows.SystemParameters.PrimaryScreenHeight;
+                    window.Width = System.Windows.SystemParameters.PrimaryScreenWidth;
+                }
 
-                // Set the position and size of the GoTo window to match the main window
-                window.Left = callingWindow.Left;
-                window.Top = callingWindow.Top;
-                window.Height = callingWindow.Height;
-                window.Width = callingWindow.Width;
             }
         }
 

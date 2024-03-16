@@ -55,7 +55,7 @@ namespace NotePadApp.Views.Support {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/NotePadApp;V2024.1.0.0;component/views/support/messageok.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/NotePadApp;component/views/support/messageok.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Support\MessageOk.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
