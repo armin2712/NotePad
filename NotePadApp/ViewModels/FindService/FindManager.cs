@@ -139,7 +139,8 @@ namespace NotePadApp.ViewModels.FindService
         /// <param name="p">System.Windows.Window to focus on</param>
         public void ReplaceAll(Tab tab, object p)
         {
-            if (!string.IsNullOrEmpty(this.Data.SearchQuery) && !string.IsNullOrEmpty(this.Data.ReplaceText))
+            if (!string.IsNullOrEmpty(this.Data.SearchQuery)
+                && !string.IsNullOrEmpty(this.Data.ReplaceText))
             {
                 this.Controller.Replace(tab, this.Data,p);
             }

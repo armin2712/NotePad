@@ -18,9 +18,8 @@
     MinWidth="500"
     MinHeight="300"
     d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
-    Background="Transparent"
-    SourceInitialized="Window_SourceInitialized"
-    WindowStyle="None"
+    MouseLeftButtonDown="Ziehen"
+    SizeChanged="GrößeGeändert"
     mc:Ignorable="d">
 
     <!--  Gets rid of the chrome top  -->
@@ -28,8 +27,10 @@
         <WindowChrome
             CaptionHeight="0"
             CornerRadius="5"
-            GlassFrameThickness="0.4"
-            ResizeBorderThickness="3" />
+            GlassFrameThickness="5"
+            NonClientFrameEdges="Bottom"
+            ResizeBorderThickness="5"
+            UseAeroCaptionButtons="False" />
 
     </WindowChrome.WindowChrome>
 
@@ -103,12 +104,7 @@
         <!--  Start of background colors  -->
 
         <!--  Tabs Background  -->
-        <Rectangle
-            Grid.Row="0"
-            Fill="{DynamicResource Tab}"
-            PreviewMouseLeftButtonDown="rctHeader_PreviewMouseLeftButtonDown"
-            PreviewMouseLeftButtonUp="rctHeader_PreviewMouseLeftButtonUp"
-            PreviewMouseMove="rctHeader_PreviewMouseMove" />
+        <Rectangle Grid.Row="0" Fill="{DynamicResource Tab}" />
         <!--  Header  -->
         <Rectangle Grid.Row="1" Fill="{DynamicResource HeaderFooter}" />
         <!--  Header  -->

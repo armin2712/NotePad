@@ -147,7 +147,8 @@ namespace NotePadApp.ViewModels.FindService
         /// <param name="p">The caller of the method.</param>
         public void FindInText(Tab tab, SearchData data, object p, string replace = null!)
         {
-            if (tab.Content.Contains(data.SearchQuery, data.Comparison) && !string.IsNullOrEmpty(data.SearchQuery))
+            if (tab.Content.Contains(data.SearchQuery, data.Comparison) && 
+                !string.IsNullOrEmpty(data.SearchQuery))
             {
                 // Find the occurrence of the string in the text.
                 var index = IndexOfSearchText(data, tab);
